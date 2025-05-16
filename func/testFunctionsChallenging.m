@@ -87,7 +87,7 @@ classdef testFunctionsChallenging
             f = @(x) x.^3./(1 + x.^4);
             df = @(x) (3*x.^2.*(1 + x.^4) - x.^3.*(4*x.^3)) ./ (1 + x.^4).^2;
             name = '$f(x) = \frac{x^3}{1 + x^4}$';
-            x0 = 3;  % Start in flat region
+            x0 = 1.25;  % Start in flat region
         end
         
         function [f, df, name, x0] = multipleScales()
