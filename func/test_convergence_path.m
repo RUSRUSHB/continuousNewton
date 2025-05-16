@@ -8,11 +8,12 @@ show_momentum = 0;        % Set to false to hide Continuous Newton with momentum
 % Parameters
 tol = 1e-10;
 max_iter = 1000;
-tau = 1e-2;  % Time step parameter for continuous Newton
+tau = 1e-1;  % Time step parameter for continuous Newton
 
 % CHANGE THE FUNCTION HERE
 % Get the test function
-[f, df, name, x0] = testFunctionsChallenging.flatRegion();
+% [f, df, name, x0] = testFunctionsChallenging.flatRegion();
+[f, df, name, x0] = testFunctionsChallenging.highlyOscillatory2();
 % [f, df, name, x0] = testFunctions.flatRegion();
 
 % Create x values for plotting the function
