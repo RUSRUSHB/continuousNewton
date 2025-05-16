@@ -6,28 +6,14 @@ This MATLAB project implements and compares two versions of Newton's Method for 
 
 ## Project Structure
 
-- `main.m`: Main script to run experiments and generate comparisons
-- `traditionalNewton.m`: Implementation of the classical Newton Method
+- `main.mlx`: Main script to plot results
 - `continuousNewton.m`: Implementation of Newton Method with adaptive step size
-- `testFunctions.m`: Collection of test functions for comparing the methods
-- `plotResults.m`: Functions for visualizing the results
+- `test_convergence_path.m`: Test and plot the progress of different NR methods. To revise it, check the rows surrounded by SENTENCES OF CAPITAL LETTERS.
+- `testFunctions.m`, `testFunctionsChallenging.m`: Collection of test functions for comparing the methods
 
 ## Usage
 
 1. Open MATLAB
-2. Navigate to the project directory
-3. Run `main.m` to execute the comparison
-
-## Method Description
-
-The adaptive step size modification introduces a variable step size that adjusts based on the Continuous Newton Analysis. This can potentially improve:
-- Convergence stability
-- Speed of convergence in certain cases
-- Handling of poorly conditioned problems
-
-The modification uses the following approach:
-TODO
-
-## Requirements
-
-TODO
+2. Navigate to the project directory, add `func/`, `fig/` to path
+3. Run `main.mlx` to see the plots. Note that the report contains all the plots.
+4. To generate new plots, run `test_convergence_path.m`. You can also modify `testFunctions.m` to test on different functions.

@@ -1,20 +1,23 @@
 % Test script to visualize convergence paths on function plot
 
+%% CHANGE THE FLAG HERE
 % Control flags
 show_traditional = 1;     % Set to false to hide Traditional Newton method
 show_continuous = 1;      % Set to false to hide Continuous Newton method
 show_momentum = 0;        % Set to false to hide Continuous Newton with momentum
+%% END OF CHANGE
 
 % Parameters
 tol = 1e-10;
 max_iter = 1000;
 tau = 1e-1;  % Time step parameter for continuous Newton
 
-% CHANGE THE FUNCTION HERE
+%% CHANGE THE FUNCTION HERE
 % Get the test function
 % [f, df, name, x0] = testFunctionsChallenging.flatRegion();
 [f, df, name, x0] = testFunctionsChallenging.highlyOscillatory2();
-% [f, df, name, x0] = testFunctions.flatRegion();
+% [f, df, name, x0] = testFunctions.polynomial();
+%% END OF CHANGE
 
 % Create x values for plotting the function
 x_plot = linspace(-2, 4, 1000);
