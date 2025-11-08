@@ -1,4 +1,4 @@
-# Continuous Newton Method with Adaptive Step Size
+# Continuous Newton Method
 
 This MATLAB project implements and compares different versions of Newton's Method:
 1. Vanilla Newton Method (NR)
